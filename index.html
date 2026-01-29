@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Portfolio Hanna Mehloul </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans overflow-x-hidden">
+    <header class="fixed top-0 left-0 w-full bg-white/80 backdrop-blur-md z-50 shadow-md">
+        <nav class="container mx-auto px-6 py-0 flex justify-between items-center">
+            <a href="#" class="block transform transition-transform duration-300 hover:scale-105">
+                <img src="img/favicon.png" alt="Logo" class="h-32 w-auto">
+            </a>
+            <div class="hidden md:flex space-x-8 items-center">
+                <a href="#about" class="font-bold text-gray-700 hover:text-neon-pink transition-colors">About</a>
+                <a href="#competences" class="font-bold text-gray-700 hover:text-neon-pink transition-colors">Skills</a>
+                <a href="#projets" class="font-bold text-gray-700 hover:text-neon-pink transition-colors">Projects</a>
+                <a href="#contact" class="bg-neon-pink text-white px-6 py-2 rounded-full font-bold
+                       transform hover:scale-110 hover:shadow-pop-pink transition-all duration-300">
+                    Contact
+                </a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-neon-pink text-3xl">
+                &#9776;
+            </button>
+        </nav>
+
+            <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg p-6 space-y-4">
+            <a href="#about" class="block text-center font-bold text-gray-700 hover:text-neon-pink">About</a>
+            <a href="#competences" class="block text-center font-bold text-gray-700 hover:text-neon-pink">Skills</a>
+            <a href="#projets" class="block text-center font-bold text-gray-700 hover:text-neon-pink">Projects</a>
+            <a href="#contact" class="block text-center bg-neon-pink text-white px-6 py-2 rounded-full font-bold">
+                contact
+            </a>
+        </div>
+    </header>
+    <main class="pt-24">
+        
+        <section class="container mx-auto min-h-screen flex flex-col justify-center items-center text-center p-6">
+            <h1 class="text-7xl md:text-9xl font-extrabold font-fun leading-none mb-4">
+                <span class="block text-neon-pink animate-on-scroll anim-slideInUp is-visible" style="--anim-delay: 0.1s;">
+                    Portfolio
+                </span>
+            </h1>
+            <p class="text-3xl md:text-5xl font-bold font-fun text-gray-800 mt-2 animate-on-scroll anim-slideInUp is-visible" style="--anim-delay: 0.3s;">
+                Hanna <span class="text-neon-green">Mehloul</span>
+            </p>
+            <p class="text-xl md:text-2xl mt-8 max-w-2xl text-gray-600 animate-on-scroll anim-fadeIn is-visible" style="--anim-delay: 0.5s;">
+                2nd year student in multimedia and internet bachelor.
+            </p>
+            <a href="#projets" class="mt-12 bg-neon-green text-gray-900 px-10 py-4 rounded-full text-2xl font-bold
+                       transform transition-all duration-300 
+                       hover:scale-110 hover:shadow-pop-green hover:-rotate-3
+                       animate-on-scroll anim-zoomIn is-visible" style="--anim-delay: 0.8s;">
+                Projects
+            </a>
+        </section>
+
+        <section id="about" class="py-32 lg:py-48 bg-white overflow-hidden">
+            <div class="container mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
+                <div class="w-full md:w-1/2 relative animate-on-scroll anim-slideInLeft group">
+                    <div class="absolute -top-4 -left-4 w-full h-full bg-neon-green rounded-2xl transform -rotate-3 transition-transform duration-300 group-hover:rotate-0"></div>
+                    <img src="img/rika.png" alt="Photo de Hanna" 
+                         class="relative rounded-2xl w-full h-auto object-cover shadow-xl transition-transform duration-300 group-hover:scale-105">
+                </div>
+                
+                <div class="w-full md:w-1/2 text-left animate-on-scroll anim-slideInRight" style="--anim-delay: 0.2s;">
+                    <h2 class="text-4xl font-bold font-fun mb-6 text-neon-pink">About me</h2>
+                    <p class="text-xl text-gray-700 mb-4 leading-relaxed">
+                       I like video games and I'm passionate about drawing and 2d animation 
+                    </p>
+                    <p class="text-xl text-gray-700 mb-4 leading-relaxed">
+                        recently I've learnt <strong class="text-neon-green">3D modeling</strong> and it's really fun! <strong class="text-neon-pink">I also like making music and animated MVs</strong>.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="competences" class="py-32 lg:py-48 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <h2 class="text-5xl font-bold font-fun text-center mb-16 text-gray-800 animate-on-scroll anim-slideInUp">
+                    hard <span class="text-neon-green">skills</span>
+                </h2>
+                
+                <div class="max-w-4xl mx-auto flex flex-wrap justify-center gap-4">
+                    <span class="text-lg font-bold bg-white text-neon-pink px-6 py-3 rounded-full shadow-md
+                                 transform transition-all hover:scale-110 hover:shadow-pop-pink 
+                                 animate-on-scroll anim-zoomIn" style="--anim-delay: 0.1s;">
+                             HTML     
+                    </span>
+                    <span class="text-lg font-bold bg-white text-neon-green px-6 py-3 rounded-full shadow-md
+                                 transform transition-all hover:scale-110 hover:shadow-pop-green
+                                 animate-on-scroll anim-zoomIn" style="--anim-delay: 0.2s;">
+                             CSS        
+                    </span>
+                    <span class="text-lg font-bold bg-white text-gray-800 px-6 py-3 rounded-full shadow-md
+                                 transform transition-all hover:scale-110 hover:shadow-lg
+                                 animate-on-scroll anim-zoomIn" style="--anim-delay: 0.3s;">
+                        Adobe After Effects          
+                    </span>
+                    <span class="text-lg font-bold bg-white text-neon-pink px-6 py-3 rounded-full shadow-md
+                                 transform transition-all hover:scale-110 hover:shadow-pop-pink
+                                 animate-on-scroll anim-zoomIn" style="--anim-delay: 0.4s;">
+                               Blender       
+                    </span>
+                    <span class="text-lg font-bold bg-white text-gray-800 px-6 py-3 rounded-full shadow-md
+                                 transform transition-all hover:scale-110 hover:shadow-lg
+                                 animate-on-scroll anim-zoomIn" style="--anim-delay: 0.5s;">
+                        Adobe Illustrator
+                    </span>
+                    <span class="text-lg font-bold bg-white text-neon-green px-6 py-3 rounded-full shadow-md
+                                 transform transition-all hover:scale-110 hover:shadow-pop-green
+                                 animate-on-scroll anim-zoomIn" style="--anim-delay: 0.6s;">
+                        Adobe Photoshop
+                    </span>
+                </div>
+            </div>
+        </section>
+
+        <section id="projets" class="py-32 lg:py-48 bg-gray-100 overflow-hidden">
+            <div class="container mx-auto px-6">
+                <h2 class="text-5xl font-bold font-fun text-center mb-20 text-gray-800 animate-on-scroll anim-slideInUp">
+                    School and personal <span class="text-neon-pink">Projects</span>
+                </h2>
+                <div class="project-carousel-container animate-on-scroll anim-fadeIn" style="--anim-delay: 0.3s;">
+                    <button id="prev-project" class="carousel-arrow carousel-arrow-left text-gray-800 hover:text-white">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                    </button>
+                    <div id="project-wrapper" class="project-wrapper">
+                        <a href="html/projets.html" class="project-item block">
+                            <div class="relative bg-transparent md:bg-white rounded-2xl md:rounded-3xl md:shadow-pop-pink overflow-hidden
+                                        md:flex md:flex-row md:items-center md:gap-8 md:rotate-1 hover:rotate-0 transition-all duration-300">
+                                <div class="relative w-full md:w-1/2 flex-shrink-0">
+                                    <img src="img/logo.png" alt="Projet 1" 
+                                         class="rounded-2xl shadow-lg w-full h-72 object-cover 
+                                                md:h-72 md:-rotate-3 hover:rotate-0 transition-transform duration-300">
+                                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent rounded-2xl md:hidden"></div>
+                                </div>
+                                <div class="absolute bottom-0 left-0 p-6 md:relative md:p-8 w-full md:w-1/2 text-left z-10">
+                                    <h3 class="text-3xl md:text-4xl font-fun mb-3 text-white md:text-neon-pink">Logo</h3>
+                                    <p class="text-gray-200 md:text-gray-700 mb-4 text-base">
+                                        The very one used here!
+                                    </p>
+                                    <div class="flex flex-wrap gap-3">
+                                        <span class="bg-neon-pink/10 text-neon-pink text-sm font-bold px-4 py-2 rounded-full">Graphism</span>
+                                        <span class="bg-neon-green/10 text-neon-green text-sm font-bold px-4 py-2 rounded-full">Illustrator</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="html/projets2.html" class="project-item block">
+                            <div class="relative bg-transparent md:bg-white rounded-2xl md:rounded-3xl md:shadow-pop-green overflow-hidden
+                                        md:flex md:flex-row-reverse md:items-center md:gap-8 md:-rotate-1 hover:rotate-0 transition-all duration-300">
+                                <div class="relative w-full md:w-1/2 flex-shrink-0">
+                                    <img src="img/surftruck.jpg" alt="Projet 2" 
+                                         class="rounded-2xl shadow-lg w-full h-72 object-cover 
+                                                md:h-72 md:rotate-3 hover:rotate-0 transition-transform duration-300">
+                                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent rounded-2xl md:hidden"></div>
+                                </div>
+                                <div class="absolute bottom-0 left-0 p-6 md:relative md:p-8 w-full md:w-1/2 text-left md:text-right z-10">
+                                    <h3 class="text-3xl md:text-4xl font-fun mb-3 text-white md:text-neon-green">Surf truck</h3>
+                                    <p class="text-gray-200 md:text-gray-700 mb-4 text-base">
+                                        Creating a brand's visual identity from scratch
+                                    </p>
+                                    <div class="flex flex-wrap gap-3 justify-start md:justify-end">
+                                        <span class="bg-neon-green/10 text-neon-green text-sm font-bold px-4 py-2 rounded-full">Design</span>
+                                        <span class="bg-neon-pink/10 text-neon-pink text-sm font-bold px-4 py-2 rounded-full">Branding</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        
+                        <a href="html/projets-3d.html" class="project-item block">
+                            <div class="relative bg-transparent md:bg-white rounded-2xl md:rounded-3xl md:shadow-pop-pink overflow-hidden
+                                        md:flex md:flex-row md:items-center md:gap-8 md:rotate-1 hover:rotate-0 transition-all duration-300">
+                                <div class="relative w-full md:w-1/2 flex-shrink-0">
+                                    <img src="img/helmet.png" alt="Projet 3" 
+                                         class="rounded-2xl shadow-lg w-full h-72 object-cover 
+                                                md:h-72 md:-rotate-3 hover:rotate-0 transition-transform duration-300">
+                                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent rounded-2xl md:hidden"></div>
+                                </div>
+                                <div class="absolute bottom-0 left-0 p-6 md:relative md:p-8 w-full md:w-1/2 text-left z-10">
+                                    <h3 class="text-3xl md:text-4xl font-fun mb-3 text-white md:text-neon-pink">F1 Helmet</h3>
+                                    <p class="text-gray-200 md:text-gray-700 mb-4 text-base">
+                                        3D modeling and texturing of a F1 Helmet
+                                    </p>
+                                    <div class="flex flex-wrap gap-3">
+                                        <span class="bg-neon-pink/10 text-neon-pink text-sm font-bold px-4 py-2 rounded-full">3D</span>
+                                        <span class="bg-neon-green/10 text-neon-green text-sm font-bold px-4 py-2 rounded-full">Modeling</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="html/projets4.html" class="project-item block">
+                            <div class="relative bg-transparent md:bg-white rounded-2xl md:rounded-3xl md:shadow-pop-green overflow-hidden
+                                        md:flex md:flex-row-reverse md:items-center md:gap-8 md:-rotate-1 hover:rotate-0 transition-all duration-300">
+                                <div class="relative w-full md:w-1/2 flex-shrink-0">
+                                    <img src="img/dashboard.png" alt="Projet 4" 
+                                         class="rounded-2xl shadow-lg w-full h-72 object-cover 
+                                                md:h-72 md:rotate-3 hover:rotate-0 transition-transform duration-300">
+                                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent rounded-2xl md:hidden"></div>
+                                </div>
+                                <div class="absolute bottom-0 left-0 p-6 md:relative md:p-8 w-full md:w-1/2 text-left md:text-right z-10">
+                                    <h3 class="text-3xl md:text-4xl font-fun mb-3 text-white md:text-neon-green">Dashboard</h3>
+                                    <p class="text-gray-200 md:text-gray-700 mb-4 text-base">
+                                        Selecting relevent data and display it pertinently
+                                    </p>
+                                    <div class="flex flex-wrap gap-3 justify-start md:justify-end">
+                                        <span class="bg-neon-green/10 text-neon-green text-sm font-bold px-4 py-2 rounded-full">MySql</span>
+                                        <span class="bg-neon-pink/10 text-neon-pink text-sm font-bold px-4 py-2 rounded-full">Php</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        
+                        <a href="html/projets-3d5.html" class="project-item block">
+                            <div class="relative bg-transparent md:bg-white rounded-2xl md:rounded-3xl md:shadow-pop-pink overflow-hidden
+                                        md:flex md:flex-row md:items-center md:gap-8 md:rotate-1 hover:rotate-0 transition-all duration-300">
+                                <div class="relative w-full md:w-1/2 flex-shrink-0">
+                                    <img src="img/dekiller.png" alt="Projet 5" 
+                                         class="rounded-2xl shadow-lg w-full h-72 object-cover 
+                                                md:h-72 md:-rotate-3 hover:rotate-0 transition-transform duration-300">
+                                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent rounded-2xl md:hidden"></div>
+                                </div>
+                                <div class="absolute bottom-0 left-0 p-6 md:relative md:p-8 w-full md:w-1/2 text-left z-10">
+                                    <h3 class="text-3xl md:text-4xl font-fun mb-3 text-white md:text-neon-pink">Dekiller's radio</h3>
+                                    <p class="text-gray-200 md:text-gray-700 mb-4 text-base">
+                                        Personal project
+                                    </p>
+                                    <div class="flex flex-wrap gap-3">
+                                        <span class="bg-neon-pink/10 text-neon-pink text-sm font-bold px-4 py-2 rounded-full">3D</span>
+                                        <span class="bg-neon-green/10 text-neon-green text-sm font-bold px-4 py-2 rounded-full">Blender</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="html/projets-3d6.html" class="project-item block">
+                            <div class="relative bg-transparent md:bg-white rounded-2xl md:rounded-3xl md:shadow-pop-green overflow-hidden
+                                        md:flex md:flex-row-reverse md:items-center md:gap-8 md:-rotate-1 hover:rotate-0 transition-all duration-300">
+                                <div class="relative w-full md:w-1/2 flex-shrink-0">
+                                    <img src="img/tenna.png" alt="Projet 6" 
+                                         class="rounded-2xl shadow-lg w-full h-72 object-cover 
+                                                md:h-72 md:rotate-3 hover:rotate-0 transition-transform duration-300">
+                                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent rounded-2xl md:hidden"></div>
+                                </div>
+                                <div class="absolute bottom-0 left-0 p-6 md:relative md:p-8 w-full md:w-1/2 text-left md:text-right z-10">
+                                    <h3 class="text-3xl md:text-4xl font-fun mb-3 text-white md:text-neon-green">Tenna model!</h3>
+                                    <p class="text-gray-200 md:text-gray-700 mb-4 text-base">
+                                        Personal project
+                                    </p>
+                                    <div class="flex flex-wrap gap-3 justify-start md:justify-end">
+                                        <span class="bg-neon-green/10 text-neon-green text-sm font-bold px-4 py-2 rounded-full">Blender</span>
+                                        <span class="bg-neon-pink/10 text-neon-pink text-sm font-bold px-4 py-2 rounded-full">Modeling</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div> <button id="next-project" class="carousel-arrow carousel-arrow-right text-gray-800 hover:text-white">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                    </button>
+                    
+                </div> <div id="carousel-indicators" class="carousel-indicators">
+                    </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="contact" class="bg-black text-gray-300 pt-24 pb-12 overflow-hidden">
+        <div class="container mx-auto px-6 text-center">
+            
+            <h2 class="text-5xl font-bold font-fun mb-6 text-white animate-on-scroll anim-slideInUp">
+                thank you for your <span class="text-neon-pink">visit</span> !
+            </h2>
+            <p class="text-xl text-gray-400 mb-12 max-w-lg mx-auto animate-on-scroll anim-slideInUp" style="--anim-delay: 0.1s;">
+                Feel free to contact me for any inquiries or requests
+            </p>
+            
+            <a href="mailto:mehloulhanna@gmail.com" 
+               class="inline-block bg-gradient-to-r from-neon-pink to-neon-green text-gray-900 px-12 py-5 rounded-full text-2xl font-bold
+                      transform transition-all duration-300 
+                      hover:scale-110 hover:shadow-pop-pink
+                      animate-on-scroll anim-zoomIn" style="--anim-delay: 0.2s;">
+                send me an email
+            </a>
+
+            <div class="mt-20 mb-10 animate-on-scroll anim-fadeIn" style="--anim-delay: 0.3s;">
+                
+            </div>
+
+            <div class="border-t border-white pt-8 mt-12 animate-on-scroll anim-fadeIn" style="--anim-delay: 0.4s;">
+               
+                <p class="text-sm text-gray-600 mt-2">&copy; 2026 - Hanna Mehloul</p>
+            </div>
+        </div>
+    </footer>
+    <script src="scripts/app.js" defer></script>
+</body>
+</html>
