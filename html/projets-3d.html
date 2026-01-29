@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F1 Helmet</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.3.0/model-viewer.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/projets-3d.css">
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans overflow-x-hidden">
+
+    <header class="fixed top-0 left-0 w-full bg-white/80 backdrop-blur-md z-50 shadow-md">
+        <nav class="container mx-auto px-6 py-0 flex justify-between items-center">
+            <a href="../index.html" class="block transform transition-transform duration-300 hover:scale-105">
+                <img src="../img/favicon.png" alt="Logo" class="h-32 w-auto">
+            </a>
+            <div class="hidden md:flex space-x-8 items-center">
+                <a href="../index.html#about" class="font-bold text-gray-700 hover:text-neon-pink transition-colors">About</a>
+                <a href="../index.html#competences" class="font-bold text-gray-700 hover:text-neon-pink transition-colors">Skills</a>
+                <a href="../index.html#projets" class="font-bold text-gray-700 hover:text-neon-pink transition-colors">Projects</a>
+                <a href="#contact" class="bg-neon-pink text-white px-6 py-2 rounded-full font-bold
+                       transform hover:scale-110 hover:shadow-pop-pink transition-all duration-300">
+                    Contact
+                </a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-neon-pink text-3xl">
+                &#9776;
+            </button>
+        </nav>
+
+            <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg p-6 space-y-4">
+            <a href="../index.html#about" class="block text-center font-bold text-gray-700 hover:text-neon-pink">About</a>
+            <a href="../index.html#competences" class="block text-center font-bold text-gray-700 hover:text-neon-pink">Skills</a>
+            <a href="../index.html#projets" class="block text-center font-bold text-gray-700 hover:text-neon-pink">Projects</a>
+            <a href="#contact" class="block text-center bg-neon-pink text-white px-6 py-2 rounded-full font-bold">
+                Contact
+            </a>
+        </div>
+    </header>
+
+    <main class="pt-32 pb-20 container mx-auto px-4 md:px-8">
+
+        <div class="text-center mb-10 animate-on-scroll anim-slideInUp">
+            <h1 class="text-5xl md:text-7xl font-fun text-gray-900 mb-2">
+                F1 <span class="text-neon-green">Helmet</span>
+            </h1>
+            <p class="text-lg text-gray-500 font-bold tracking-widest uppercase">Modeling</p>
+        </div>
+
+        <section class="relative w-full max-w-5xl mx-auto mb-20 animate-on-scroll anim-zoomIn">
+            
+            <div class="absolute -inset-1 bg-gradient-to-br from-neon-green to-neon-pink rounded-3xl blur opacity-40"></div>
+            
+            <div class="relative h-[500px] md:h-[600px] bg-gray-900 rounded-3xl border-4 border-gray-800 overflow-hidden shadow-2xl">
+                
+                <div class="absolute inset-0 bg-grid-pattern opacity-20 bg-grid-animate pointer-events-none"></div>
+
+                <model-viewer 
+                    src="../img/casque.glb" 
+                    alt="Un modèle 3D de casque f1"
+                    auto-rotate
+                    camera-controls
+                    shadow-intensity="1"
+                    exposure="1"
+                    environment-image="neutral"
+                    interaction-prompt="auto"
+                    class="z-10 relative">
+                    
+                    <div slot="progress-bar" class="w-full h-1 bg-gray-800 absolute top-0 left-0">
+                        <div class="h-full bg-neon-green" style="width: 100%;"></div>
+                    </div>
+                </model-viewer>
+
+            </div>
+            
+            <div class="text-center mt-4 text-gray-400 text-sm font-mono animate-pulse">
+               CLick and slide to turn around • Scroll to zoom
+            </div>
+        </section>
+
+
+        <section class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+            
+            <div class="md:col-span-2 bg-white border-4 border-gray-900 rounded-3xl p-8 shadow-pop-green">
+                <h2 class="text-3xl font-fun mb-6 text-gray-900">Approach</h2>
+                <div class="prose text-gray-600">
+                    <p class="mb-4">
+                       For this project, the objective was to create a 3D asset optimized for the web (Low Poly) while maintaining a high level of detail through texture baking.
+                    </p>
+                    <p>
+                        The modeling and texturing were both done in Blender. The export was done in `.glb` format to ensure maximum compatibility with modern browsers.
+                        The design was inspired of Hatsune Miku in her recent Sonic Racing Crossworlds appearance.
+                    </p>
+                </div>
+            </div>
+
+            <div class="bg-gray-900 text-white rounded-3xl p-8 shadow-pop-pink relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-20 h-20 bg-neon-pink blur-2xl opacity-20"></div>
+
+                <h3 class="text-xl font-fun mb-6 text-neon-pink">Info</h3>
+                
+                <ul class="space-y-4 font-mono text-sm">
+                    <li class="flex justify-between border-b border-gray-700 pb-2">
+                        <span class="text-gray-400">Software</span>
+                        <span class="text-neon-green font-bold">Blender</span>
+                    </li>
+                    <li class="flex justify-between border-b border-gray-700 pb-2">
+                        <span class="text-gray-400">Texturing</span>
+                        <span class="text-neon-green font-bold">Blender</span>
+                    </li>
+                    <li class="flex justify-between border-b border-gray-700 pb-2">
+                        <span class="text-gray-400">Format</span>
+                        <span class="text-white">.GLB / .GLTF</span>
+                    </li>
+                </ul>
+
+                <div class="mt-8">
+                    <h4 class="font-bold mb-3 text-sm uppercase tracking-wide text-gray-500">Tags</h4>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-gray-800 text-xs px-3 py-1 rounded-full border border-gray-700">3d</span>
+                        <span class="bg-gray-800 text-xs px-3 py-1 rounded-full border border-gray-700">blender</span>
+                        <span class="bg-gray-800 text-xs px-3 py-1 rounded-full border border-gray-700">modeling</span>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer id="contact" class="bg-black text-gray-300 pt-24 pb-12 overflow-hidden">
+        <div class="container mx-auto px-6 text-center">
+            
+            <h2 class="text-5xl font-bold font-fun mb-6 text-white animate-on-scroll anim-slideInUp">
+                thank you for your <span class="text-neon-pink">visit</span> !
+            </h2>
+            <p class="text-xl text-gray-400 mb-12 max-w-lg mx-auto animate-on-scroll anim-slideInUp" style="--anim-delay: 0.1s;">
+                Feel free to contact me for any inquiries or requests
+            </p>
+            
+            <a href="mailto:mehloulhanna@gmail.com" 
+               class="inline-block bg-gradient-to-r from-neon-pink to-neon-green text-gray-900 px-12 py-5 rounded-full text-2xl font-bold
+                      transform transition-all duration-300 
+                      hover:scale-110 hover:shadow-pop-pink
+                      animate-on-scroll anim-zoomIn" style="--anim-delay: 0.2s;">
+                send me an email
+            </a>
+
+            <div class="mt-20 mb-10 animate-on-scroll anim-fadeIn" style="--anim-delay: 0.3s;">
+                
+            </div>
+
+            <div class="border-t border-white pt-8 mt-12 animate-on-scroll anim-fadeIn" style="--anim-delay: 0.4s;">
+               
+                <p class="text-sm text-gray-600 mt-2">&copy; 2026 - Hanna Mehloul</p>
+            </div>
+        </div>
+    </footer>
+    <script src="../scripts/projets-3d.js"></script>
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surf Truck</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/projets.css">
+
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans overflow-x-hidden">
+
+    <header class="fixed top-0 left-0 w-full bg-white/80 backdrop-blur-md z-50 shadow-md">
+        <nav class="container mx-auto px-6 py-0 flex justify-between items-center">
+            <a href="../index.html" class="block transform transition-transform duration-300 hover:scale-105">
+                <img src="../img/favicon.png" alt="Logo" class="h-32 w-auto">
+            </a>
+            <div class="hidden md:flex space-x-8 items-center">
+                <a href="../index.html#about" class="font-bold text-gray-700 hover:text-neon-pink transition-colors">About</a>
+                <a href="../index.html#competences" class="font-bold text-gray-700 hover:text-neon-pink transition-colors">Skills</a>
+                <a href="../index.html#projets" class="font-bold text-gray-700 hover:text-neon-pink transition-colors">Projects</a>
+                <a href="#contact" class="bg-neon-pink text-white px-6 py-2 rounded-full font-bold
+                       transform hover:scale-110 hover:shadow-pop-pink transition-all duration-300">
+                    Contact
+                </a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-neon-pink text-3xl">
+                &#9776;
+            </button>
+        </nav>
+
+            <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg p-6 space-y-4">
+            <a href="../index.html#about" class="block text-center font-bold text-gray-700 hover:text-neon-pink">About</a>
+            <a href="../index.html#competences" class="block text-center font-bold text-gray-700 hover:text-neon-pink">Skills</a>
+            <a href="../index.html#projets" class="block text-center font-bold text-gray-700 hover:text-neon-pink">Projects</a>
+            <a href="#contact" class="block text-center bg-neon-pink text-white px-6 py-2 rounded-full font-bold">
+                Contact
+            </a>
+        </div>
+    </header>
+
+    <main class="pt-32 pb-20 container mx-auto px-4 md:px-8">
+
+        <div class="text-center mb-12 animate-on-scroll anim-slideInUp">
+            <h1 class="text-5xl md:text-7xl font-fun text-gray-900 mb-4">
+                Visual brand <span class="text-neon-pink">identity</span>
+            </h1>
+            <p class="text-xl text-gray-500 font-bold"> Graphism / Brand design </p>
+        </div>
+
+        <section class="flex flex-col lg:flex-row gap-12 items-start mb-24">
+            
+            <div class="w-full lg:w-2/3 relative group perspective-1000">
+                <div class="absolute -inset-2 bg-gradient-to-r from-neon-pink to-neon-green rounded-3xl blur opacity-30 group-hover:opacity-60 transition duration-1000 animate-pulse"></div>
+                
+                <div class="relative bg-white p-2 rounded-3xl shadow-pop-pink transition-all duration-300 border-4 border-gray-900 float-anim">
+                    <img id="main-image" src="../img/surftruck.jpg" alt="Vue principale" 
+                         class="w-full h-[400px] md:h-[600px] object-cover rounded-2xl cursor-pointer">
+                </div>
+            </div>
+
+            <div class="w-full lg:w-1/3 flex flex-col gap-6">
+                <h3 class="font-fun text-2xl text-gray-800 mb-2">Galerie <span class="text-neon-green">Shots</span></h3>
+                
+                <div class="grid grid-cols-3 gap-4">
+                    <div class="thumb-item cursor-pointer rounded-xl overflow-hidden border-4 border-transparent hover:border-neon-pink transition-all duration-300" 
+                         onclick="changeImage(this, '../img/sketchanddone.png')">
+                        <img src="../img/sketchanddone.png" class="w-full h-24 object-cover hover:scale-110 transition-transform duration-500">
+                    </div>
+                    
+                    <div class="thumb-item cursor-pointer rounded-xl overflow-hidden border-4 border-transparent hover:border-neon-pink transition-all duration-300" 
+                         onclick="changeImage(this, '../img/sfmoodboard.jpg')">
+                        <img src="../img/sfmoodboard.jpg" class="w-full h-24 object-cover hover:scale-110 transition-transform duration-500">
+                    </div>
+
+                    <div class="thumb-item cursor-pointer rounded-xl overflow-hidden border-4 border-transparent hover:border-neon-pink transition-all duration-300" 
+                         onclick="changeImage(this, '../img/palette.png')">
+                        <img src="../img/palette.png" class="w-full h-24 object-cover hover:scale-110 transition-transform duration-500">
+                    </div>
+
+                    <div class="thumb-item cursor-pointer rounded-xl overflow-hidden border-4 border-transparent hover:border-neon-pink transition-all duration-300" 
+                         onclick="changeImage(this, '../img/logotype.png')">
+                        <img src="../img/logotype.png" class="w-full h-24 object-cover hover:scale-110 transition-transform duration-500">
+                    </div>
+
+                    <div class="thumb-item cursor-pointer rounded-xl overflow-hidden border-4 border-transparent hover:border-neon-pink transition-all duration-300" 
+                         onclick="changeImage(this, '../img/surftrucklogo.png')">
+                        <img src="../img/surftrucklogo.png" class="w-full h-24 object-cover hover:scale-110 transition-transform duration-500">
+                    </div>
+
+                    <div class="thumb-item cursor-pointer rounded-xl overflow-hidden border-4 border-transparent hover:border-neon-pink transition-all duration-300" 
+                         onclick="changeImage(this, '../img/mockups.png')">
+                        <img src="../img/mockups.png" class="w-full h-24 object-cover hover:scale-110 transition-transform duration-500">
+                    </div>
+                </div>
+
+                <div class="mt-8 bg-gray-900 text-white p-6 rounded-2xl shadow-pop-green transform rotate-2 hover:rotate-0 transition-transform">
+                    <p class="font-bold text-neon-green mb-2">Tools :</p>
+                    <p class="text-sm">Adobe Illustrator</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="max-w-4xl mx-auto mt-20">
+            <div class="bg-white border-4 border-gray-900 rounded-3xl p-8 md:p-12 shadow-[15px_15px_0px_0px_#fe3178] relative overflow-hidden">
+            
+                <h2 class="text-4xl font-fun mb-8 text-gray-900">Approach</h2>
+                
+                <div class="prose prose-lg text-gray-600">
+                    <p class="mb-6">
+                      In this project, we were asked to create the entire visual identity of a surf truck brand.   
+                    </p>
+                    <p class="mb-6">
+                         We had to imagine a logotype and the whole aesthetic that comes with it as well as guidelines and protection area, a moodboard, and mockups.
+                    </p>
+                   
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+   <footer id="contact" class="bg-black text-gray-300 pt-24 pb-12 overflow-hidden">
+        <div class="container mx-auto px-6 text-center">
+            
+            <h2 class="text-5xl font-bold font-fun mb-6 text-white animate-on-scroll anim-slideInUp">
+                thank you for your <span class="text-neon-pink">visit</span> !
+            </h2>
+            <p class="text-xl text-gray-400 mb-12 max-w-lg mx-auto animate-on-scroll anim-slideInUp" style="--anim-delay: 0.1s;">
+                Feel free to contact me for any inquiries or requests
+            </p>
+            
+            <a href="mailto:mehloulhanna@gmail.com" 
+               class="inline-block bg-gradient-to-r from-neon-pink to-neon-green text-gray-900 px-12 py-5 rounded-full text-2xl font-bold
+                      transform transition-all duration-300 
+                      hover:scale-110 hover:shadow-pop-pink
+                      animate-on-scroll anim-zoomIn" style="--anim-delay: 0.2s;">
+                send me an email
+            </a>
+
+            <div class="mt-20 mb-10 animate-on-scroll anim-fadeIn" style="--anim-delay: 0.3s;">
+                
+            </div>
+
+            <div class="border-t border-white pt-8 mt-12 animate-on-scroll anim-fadeIn" style="--anim-delay: 0.4s;">
+               
+                <p class="text-sm text-gray-600 mt-2">&copy; 2026 - Hanna Mehloul</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../scripts/projets.js"></script>
+</body>
+</html>
